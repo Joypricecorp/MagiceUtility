@@ -1,0 +1,25 @@
+{
+    "name":         "magice/utility",
+    "description":  "Utilities",
+    "keywords":     ["utility"],
+    "type":         "library",
+    "license":      "MIT",
+    "authorsa":     [
+        {
+            "name":  "ツ Liverbool",
+            "email": "nukboon@gmail.com"
+        }
+    ],
+    "require":      {
+        "php":                      ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Magice\\Utility": "" }
+    },
+    "target-dir": "Magice",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master-dev"
+        }
+    }
+}

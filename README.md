@@ -1,0 +1,4 @@
+MagiceUtility
+=============
+
+Set of Utilities
