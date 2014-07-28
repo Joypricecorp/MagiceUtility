@@ -77,6 +77,10 @@ namespace Magice\Utility {
                             return $array[$sKey] ? $sKey : '';
                         }
 
+                        if (is_array($array[$sKey])) {
+                            return $sKey . '="' . implode(',', $array[$sKey]) . '"';
+                        }
+
                         return $sKey . '="' . $array[$sKey] . '"';
                     },
                     array_keys($array)
