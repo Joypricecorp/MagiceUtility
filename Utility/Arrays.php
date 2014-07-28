@@ -52,7 +52,6 @@ namespace Magice\Utility {
          * @param   array $array An array to test.
          *
          * @return  boolean  True if the array is an associative array.
-         * @since   1.0
          */
         public static function isAssoc($array)
         {
@@ -67,12 +66,17 @@ namespace Magice\Utility {
             return false;
         }
 
-        public static function toAttrs(array $array)
+        public static function toAttrs(array $array, $ignore = array())
         {
             return join(
                 ' ',
                 array_map(
-                    function ($sKey) use ($array) {
+                    function ($sKey) use ($array, $ignore) {
+
+                        if(in_array($sKey, $ignore)) {
+                            return '';
+                        }
+
                         if (is_bool($array[$sKey])) {
                             return $array[$sKey] ? $sKey : '';
                         }
