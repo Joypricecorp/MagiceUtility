@@ -1,6 +1,6 @@
 <?php
 
-namespace Magice\Utility\Symfony {
+namespace Magice\Utility\Symfony\Form {
 
     use \Symfony\Component\Form\Form;
 
@@ -25,7 +25,7 @@ namespace Magice\Utility\Symfony {
      *
      * @author Maciej Szkamruk <ex3v@ex3v.com>
      */
-    class FormErrors
+    class Errors
     {
         /**
          * This is the main method of service. Pass form object and call it to get resulting array.
